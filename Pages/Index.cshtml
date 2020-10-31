@@ -1,0 +1,13 @@
+﻿@page
+@using ContosoCraftsASP101v001.WebSite10302020.Components 
+@model IndexModel
+@{
+    ViewData["Title"] = "Contoso Crafts     Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contoso Crafts</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>
